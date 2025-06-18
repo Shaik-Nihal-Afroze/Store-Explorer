@@ -3,7 +3,7 @@ import {useAuthStore} from "../../store/useAuthStore.js"
 import { useApplicationsStore } from '../../store/useApplicationsStore.js'
 import { useNavigate } from 'react-router-dom'
 import Header from '../../components/Header/index.jsx'
-import "../StoreOwnerPage/StoreOwner.css"
+import "../StoreOwnerPage/Storeowner.css"
 import { useState,useEffect } from 'react'
 import { FaStar } from "react-icons/fa";
 import { IoLocationOutline } from "react-icons/io5";
