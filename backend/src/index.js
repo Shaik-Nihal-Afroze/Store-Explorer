@@ -15,7 +15,7 @@ app.use(cookieParser())
 dotenv.config()
 
 
-const allowedOrigin = ['http://localhost:5173']
+const allowedOrigin = ['https://store-explorer.onrender.com',http://localhost:5173']
 
 app.use(cors({
     origin:allowedOrigin,
