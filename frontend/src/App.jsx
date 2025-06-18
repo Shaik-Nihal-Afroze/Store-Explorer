@@ -6,7 +6,6 @@ import { ToastContainer } from 'react-toastify';
 
 import {Routes, Route, Navigate} from 'react-router-dom';
 
-
 import { ClipLoader } from 'react-spinners';
 
 
