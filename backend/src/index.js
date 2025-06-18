@@ -15,10 +15,15 @@ app.use(cookieParser())
 dotenv.config()
 
 
-const allowedOrigin = ['https://store-explorer.onrender.com',http://localhost:5173']
+const allowedOrigin = ['https://store-explorer-ffjl.vercel.app','http://localhost:5173']
 
 app.use(cors({
-    origin:allowedOrigin,
+    origin:function(origin,callback){
+        if(!origin || allowedOrigin.includes(origin)){
+            callback(null ,true)
+        }else{
+            callback(new Error('Not allowed by CORS'))}
+    },
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials:true,
 }))
