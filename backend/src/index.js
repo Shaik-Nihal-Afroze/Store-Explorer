@@ -15,7 +15,7 @@ app.use(cookieParser())
 dotenv.config()
 
 
-const allowedOrigin = ['https://store-explorer-ffjl.vercel.app','http://localhost:5173']
+const allowedOrigin = ['https://store-explorer-4rvx.vercel.app','http://localhost:5173']
 
 app.use(cors({
     origin:function(origin,callback){
